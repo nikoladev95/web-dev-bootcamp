@@ -1,0 +1,96 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 200%;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    margin-top: 0;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 0;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    padding-top: 100px;
+    position: relative;
+    
+}
+
+.middle-container {
+    position: relative;
+}
+
+.bottom-container {
+    
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    bottom: 300px;
+    left: 300px;
+    position: absolute;
+
+}
+
+.profile-image {
+    padding-top: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+.database {
+    height: 100px;
+    width: 100px;
+}
+
+.front-end {
+    height: 100px;
+    width: 100px;
+}
+
+.language {
+    height: 100px;
+    width: 100px;
+}
+
+a {
+    color: #11999E
+}
+
+.hello {
+    bottom: 50px;
+    display: inline-block;
+    left: 10px;
+    position: relative;
+    
+}
