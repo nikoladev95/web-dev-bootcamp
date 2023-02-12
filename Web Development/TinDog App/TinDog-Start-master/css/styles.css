@@ -1,0 +1,90 @@
+/* Tag Selectors */
+
+body {
+    font-family: 'Monserrat', sans-serif;
+}
+
+
+h1 {  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ID/Class Selectors */
+
+#title {
+    background-color: #FF4C68;
+    color: white;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+
+}
+
+.dog-image {
+    transform: rotate(25deg);
+    width: 60%;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding-bottom: 2.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Monserrat-Light', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Download Buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Features */
+
+.icon {
+    color: #EF8172;
+    margin-bottom: 1rem;
+
+}
+
+.icon:hover {
+    color: #FF4C68;
+}
+
+#features {
+    margin: 7% 15%;
+}
+
+.feature-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature-desc {
+    color: #8F8F8F;
+    margin: auto;
+    width: 40%;
+}
