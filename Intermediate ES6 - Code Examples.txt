@@ -1,0 +1,159 @@
+// var n = Math.random();
+
+// n = n * 6;
+// n = Math.floor(n) + 1;
+
+// console.log(n);
+
+// prompt("Enter your name: ");
+// prompt("Enter your lover's name: ");
+
+// var loveScore = Math.floor(Math.random() * 100) + 1;
+
+// if (loveScore > 70) {
+//     alert("Love compatibility: " + loveScore + "%. You love each other like Kanye loves Kanye.");
+// } else if (loveScore > 30 && loveScore <=70) {
+//     alert("Love compatibility: " + loveScore + "%");
+// } else {
+//     alert("Love compatibility: " + loveScore + "%. You go together like oil and water.");
+// }
+
+
+// function bmiCalculator(weight, height) {
+//     var bmi = Math.round(weight / Math.pow(height, 2));
+//     var interpretation = "";
+
+//     if (bmi > 24.9) {
+//         interpretation = "Your BMI is " + bmi + ", so you are overweight.";
+//     } else if (bmi >= 18.5 && bmi <= 24.9) {
+//         interpretation = "Your BMI is " + bmi + ", so you have a normal weight.";
+//     } else {
+//         interpretation = "Your BMI is " + bmi + ", so you are underweight.";
+//     }
+    
+//     return interpretation;
+// }
+
+// bmiCalculator(127, 1.87);
+
+// function leapYear(year) {
+//     var message = "";
+//     if (year % 4 == 0) {
+//       if (year % 100 == 0) {
+//         if (year % 400 == 0) {
+//           message = "Leap year.";
+//         } else {
+//           message = "Not leap year.";
+//         }
+//       } else {
+//         message = "Leap year.";
+//       }
+
+
+      
+//     } else {
+//       message = "Not leap year.";
+//     }
+
+//     return message;
+
+// }
+
+
+// var name = prompt("What is your name?");
+// var guestList = ["Nikola", "Angela", "Momcilo", "Profan", "Kokan", "Bisenija"];
+
+// if (guestList.includes(name)) {
+//     alert("Welcome");
+// } else {
+//     alert("Sorry. Maybe next time.");
+// }
+
+// var output = [];
+
+// function fizzBuzz() {
+
+//     for (var count = 1; count <= 100; count++) {
+//         if (count % 3 === 0 && count % 5 === 0) {
+//             output.push("FizzBuzz");
+//         } else if (count % 3 === 0) {
+//             output.push("Fizz");
+//         } else if (count % 5 === 0) {
+//              output.push("Buzz");
+//         } else {
+//              output.push(count);
+//         }
+    
+//     }
+//     console.log(output);
+
+// }
+
+
+// function whosPaying(names) {
+    
+// /******Don't change the code above*******/
+    
+//     //Write your code here.
+//     var message = "";
+//     var randomNumber = Math.floor(Math.random() * names.length);
+
+//     message = names[randomNumber] + " is going to buy lunch today!";
+    
+//     return message;
+    
+
+// /******Don't change the code below*******/    
+// }
+
+// whosPaying(["Nikola", "Marija Serifovic", "Momcilo", "Cicolina"])
+
+// function wantSomeBeer() {
+//     var bottlesNum = 99;
+
+//     while (bottlesNum >= 1) {
+//         if (bottlesNum === 1) {
+//             console.log(bottlesNum + " bottle of beer on the wall, " + bottlesNum + " bottle of beer. Take one down and pass it around, no more bottles of beer on the wall.");
+//             bottlesNum--;
+//         }
+//         if (bottlesNum > 0) {
+//             console.log(bottlesNum + " bottles of beer on the wall, " + bottlesNum + " bottles of beer. Take one down and pass it around, " + (bottlesNum - 1) + " bottles of beer on the wall.");
+//             bottlesNum--;
+//         }
+//     }
+//     console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.");
+
+    
+// }
+
+function fibonacciGenerator (n) {
+//Do NOT change any of the code above 👆
+    //Write your code here:
+    var initialArray = [0, 1];
+    var outputArray = [];
+
+    for (var i = 0; i < n; i++) {
+        if (n === 1) {
+            outputArray = [0];
+            return outputArray;
+        } else if (n === 2) {
+            outputArray = [0, 1];
+            return outputArray;
+        } else {
+            var countArrayItems = initialArray.length;
+            var sumLastTwo = initialArray[countArrayItems - 1] + initialArray[countArrayItems - 2];
+
+            initialArray.push(sumLastTwo);
+            outputArray = initialArray;
+
+            if (outputArray.length === n) {
+                return outputArray;
+            }
+               
+        }
+    }
+
+    //Return an array of fibonacci numbers starting from 0.
+    
+//Do NOT change any of the code below 👇
+}
