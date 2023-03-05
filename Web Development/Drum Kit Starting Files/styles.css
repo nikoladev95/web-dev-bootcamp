@@ -44,6 +44,10 @@ footer {
   background-image: url("images/kick.png");
 }
 
+.y {
+  background-image: url("images/yamete.gif");
+}
+
 .set {
   margin: 10% auto;
 }

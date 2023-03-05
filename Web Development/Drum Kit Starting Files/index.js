@@ -54,6 +54,11 @@ function soundPlay(trigger) {
             var kick = new Audio("sounds/kick-bass.mp3");
             kick.play();
         break;
+
+        case "y":
+            var yamete = new Audio("sounds/yamete-kudasai.wav");
+            yamete.play();
+        break;
     
         default:
             console.log(buttonInnerHTML);
