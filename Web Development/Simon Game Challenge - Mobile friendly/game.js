@@ -49,7 +49,7 @@ function animatePress(currentColour) {
     clickedButton.addClass("pressed");
     setTimeout(() => {
         clickedButton.removeClass("pressed");
-    }, 100);
+    }, 200);
 }
 
 function checkAnswer(currentLevel) {
@@ -68,7 +68,7 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Tap Here to Restart");
         startOver();
 
     }
