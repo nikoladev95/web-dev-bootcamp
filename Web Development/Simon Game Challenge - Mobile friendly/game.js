@@ -14,7 +14,7 @@ $(".btn").on("click", function() {
     checkAnswer(userClickedPattern.length-1);
 });
 
-$(document).on("input", function() {
+$("#level-title").on("click", function() {
     if (!started) {
         nextSequence();
         $("#level-title").text("Level " + level);

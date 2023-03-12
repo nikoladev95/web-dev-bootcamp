@@ -90,7 +90,7 @@ body {
 
 @media only screen and (min-width: 200px) and (max-width: 470px) {
   .btn {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
   }
 }
