@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>Bacon Fansite</title>
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Include Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4fWnY4Y4/2J4ZhRzGPIbN/n5+5/d5Jq3Ndc+dDS7DgbR1zZQMQ4gz57PzvY0iJV5fc5xn5S9E5e5vMB1V+zOjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -14,6 +17,42 @@
   <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
   <img class="bacon" src="https://em-content.zobj.net/thumbs/120/apple/325/bacon_1f953.png" alt="bacon-img">
   <img class="broccoli circular" src="https://em-content.zobj.net/thumbs/120/google/350/broccoli_1f966.png" alt="broccoli-img">
+
+  <p>Current number: <span id="myNumber"></span></p>
+
+  <script>
+    function incrementNumberWithDots(number, incrementAmount, elementId) {
+      const element = document.getElementById(elementId);
+      
+      // Retrieve the previously stored number from local storage
+      let currentNumber = parseInt(localStorage.getItem('myNumber')) || number;
+  
+      // Use setInterval to increment the number at a specified interval
+      setInterval(() => {
+        // Increment the current number by the specified amount
+        currentNumber += incrementAmount;
+  
+        // Format the number with dots
+        const formattedNumber = currentNumber.toLocaleString();
+  
+        // Update the element with the formatted number
+        element.textContent = formattedNumber;
+  
+        // Store the current number in local storage
+        localStorage.setItem('myNumber', currentNumber.toString());
+      }, 1000); // Update the number every second
+    }
+  
+    // Call the function with the initial number, increment amount, and element id
+    incrementNumberWithDots(10000, 250, 'myNumber');
+  </script>
+
+<mat-slide-toggle [(ngModel)]="darkMode" color="primary">
+  <mat-icon [ngClass]="{'dark-icon': darkMode, 'light-icon': !darkMode}">
+    {{ darkMode ? 'brightness_3' : 'wb_sunny' }}
+  </mat-icon>
+</mat-slide-toggle>
+
 </body>
 
 </html>
